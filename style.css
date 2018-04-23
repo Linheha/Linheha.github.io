@@ -1,11 +1,432 @@
 body {
-background-color: #000;
+	background-color: #EAE9E8;
+	width: 100%;
+	height: 100%;
+	overflow-y:scroll;
+	}
+
+[onclick] {
+    cursor: crosshair;
 }
 
-.Soon {
-	padding: 150px;
-	color: #fff;
+a:hover {
+	cursor: crosshair;
+	color: #E20A2E;
+	transition: .2s cubic-bezier(0.32, 0.52, 1, 1);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ------ HOME -------*/
+body.home header, body.home #pageContent{
+	display: none;
+}
+
+#homeBlock {
+	padding-top: 90px;
+	display:none;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#homeBlock p {
+    padding-top: 54px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-family: Letter Gothic Std;
+    font-size: 14px;
+	line-height: 1.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+
+body.home #homeBlock{
+	display: block;
+}
+
+.homeVerticalLine {
+  margin-left: auto;
+  margin-right: auto;
+  width:2px;
+}
+
+.homeVerticalLine svg{
+	height: 42px;
+	width: 2px;
+}
+
+#nameHome {
 	text-align: center;
-	font-family: Letter Gothic Std;
+    align-self: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: block;
+	}
+
+#nameHome a {
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	}
 	
+#menuHome {
+	text-align: center;
+	padding-bottom: 35px;
+}
+
+#menuHome li {
+	display: inline-block;
+    text-align: center;
+    width: 70px;
+	font-family: Letter Gothic Std;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+#MP {
+	font-family: Scada;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	color: #000;
+}
+
+#UI {
+	padding-top: 6px;
+    padding-bottom: 14px;
+	font-family: Scada;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	color: #000;
+}
+
+#eyeHome { 
+	width: 40px;
+    height: auto;
+	vertical-align: text-bottom;
+}
+
+/* ------- INDEX ------- */
+
+header {
+	width: 100%;
+	z-index: 1;
+	/*background: #DDDDDD;*/
+	/*position: fixed;*/
+}
+
+#verticalLine {
+  margin-left: auto;
+  margin-right: auto;
+  width:2px;
+}
+
+#verticalLine svg{
+	height: 42px;
+	width: 2px;
+}
+
+#Top {
+	padding: 0px 60px 0px 60px;
+	height: 54px;
+	display: flex;
+	}
+
+/* ------ TOP LEFT ------*/
+#name {
+	flex-basis: 100%;
+	display: inline-block;
+	}
+	
+#name svg {
+	height: 54px;
+	}
+	
+#name svg path {
+	transition: .5s ease;
+	}
+
+#name svg:hover path {
+	Fill: #E20A2E;
+	}
+	
+#name a {
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	}
+
+#name h1 { /*marjolaine paz*/
+	padding-left: 12px;
+	font-family: Scada;
+	font-weight: 700;
+	font-size: 18px;
+	color: #000;
+	align-self: center;
+	display: inline-block;
+	transition: .2s ease-in-out;
+}
+	
+/* ----- TOP CENTER ----- */
+
+header  nav {
+	/*flex-basis: 100%;*/ /*Bug chelou nav decentrée quand resize*/
+	max-width: 100%;
+	align-self: center;
+	text-align: center;
+	}
+
+#menu {
+	display: flex;
+	justify-content: center;
+	}	
+
+#menu li {
+    text-align: center;
+	width: 70px;
+	margin-top: auto;
+    margin-bottom: auto;
+	/* transition: .2s ease-in-out; */
+	}
+	
+#menu li a {
+	font-family: Letter Gothic Std;
+	font-size: 14px;
+	text-decoration: none;
+	color: #000 /*#6D6D6D*/;
+	line-height: 0px;
+	/* border-bottom: 1px solid #000; */
+	/* transition: .5s ease; */
+	}
+
+
+#menu li :hover, #menuHome li :hover {
+	border-bottom: none;
+	color: #E20A2E;
+	font-weight: 700;
+	}
+
+#menu li a :focus {
+outline: dotted thin;
+}
+
+#Eye { 
+	width: 40px;
+    height: auto;
+}
+	
+/* ------ TOP RIGHT ------*/
+
+#social {
+	flex-basis: 100%;
+	align-self: center;
+	text-align: right;
+	vertical-align: middle;
+	}
+
+#social svg{
+	width: 18px;
+	height: 18px;
+	}
+
+#social .cls-1{
+	Fill: #6D6D6D;
+	}
+
+#social svg:hover path {
+	Fill: #E20A2E;
+	}
+
+/* FIN HEADER */
+
+/* ------WORKS IMAGES-------*/
+
+#wrapThumbnails {
+	padding: 30px 60px 30px 60px;
+	overflow: hidden;
+	/* width: calc(100% - 56px); */
+	width:67.5%;
+	margin-left: auto;
+    margin-right: auto;
+	transition: .2s ease-in-out;
+	}
+	
+.imgContainer {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}	
+
+.imgContainer img {
+	max-width: 100%;
+	height: auto;
+	-webkit-backface-visibility: hidden;
+	transition: opacity 2s;
+	opacity: 1;
+	}
+
+#Absolver {
+	padding-bottom: 4px;
+	}
+	
+#row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+#row .imgContainer {
+	width: 30%; /*à pas supprimer : 3 images alignées qui se resizent bien*/
+	padding-left: 4px;
+	padding-right: 4px;
+	margin:0px;
+	float: left;
+	/*margin: 4px;*/
+	}
+
+/* ---------h2 IMAGES hovering--------- */
+
+.imgContainer h2 {
+	position: absolute;
+	font-family: Letter Gothic Std;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.2em;
+	padding: 6px 12px 2px 12px;
+	line-height: 1.2em;
+	background-color: #000;	
+	transition: .5s ease;
+	opacity: 0;
+	}
+	
+.imgContainer:hover h2 {
+	opacity: 1;
+	}
+	
+.imgContainer img{
+	opacity: 1;
+	transition: .5s ease;
+	}
+
+.imgContainer :hover img  {
+	opacity: 0.85;
+	}
+
+	
+/* ------- ABOUT ----------- */
+
+#aboutText {
+	padding-top: 24px;
+	font-family: Scada;
+	font-style: italic;
+	line-height: 1.2em;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000;
+}
+
+#CVTitle {
+	padding-top: 24px;
+	font-family: Letter Gothic Std;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000;
+}
+
+#aboutPic {
+	width: 200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* ------ Responsive stuff ------ */
+
+	
+/* GALLERY */
+
+@media (max-width: 1135px) {
+	
+	#wrapThumbnails{
+	padding: 30px 0px 0px 0px;
+    /*width: calc(100% - 40px); */
+	 width: 85%;
+	}
+	
+	#row  {
+	flex-wrap: inherit;
+	}
+	
+	#row .imgContainer {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1050px) {
+	
+	#name h1{
+		font-size: 16px;
+	}
+}
+	
+@media (max-width: 800px) {
+
+/*header + gallery*/
+
+	#verticalLine {
+	padding-bottom: 2px;
+	}
+
+	#Top {
+	padding:12px 20px 12px 20px;	
+	}
+	
+	#name h1{
+	visibility: hidden;
+	}
+	
+	#menu {
+	display: inline-block;
+	}
+
+	#menu li {
+	padding: 4px 0px 6px 0px;
+	}
+	
+	#wrapThumbnails{
+	padding-top: 30px;
+	}
+	
+	#Eye {
+		width: 35px;
+	}
+}
+	
+@media (max-width: 680px) {
+	
+	#row  {
+		flex-wrap: wrap;
+	}
+	
+	.imgContainer img {
+		width: 616px;
+	}
+	
+	#row .imgContainer {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 4px;
+	}
 }

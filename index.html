@@ -2,16 +2,78 @@
 <html>
     <head>
         <meta charset="utf-8" />
+	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="style.css" />
-        <title>Oregano</title>
+	<link rel="stylesheet" href="styleProjects.css" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Scada:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:100,200,300,400,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet">
+	
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="svg_inliner.js"></script>
+        <title>Marjolaine Paz ─ Portfolio</title>
     </head>
    
-<body>
-<div class="Soon">
-<img class="Logo" src="images/Logo_MPaz_Red.png"> </br>
-Marjolaine Paz </br>
--</br>
-Website under construction
+<body class="home">
+
+<div id="homeBlock">
+	<div class="homeVerticalLine">
+		<svg>
+			<line x1="0" y1="0" x2="0" y2="42" style="stroke:rgb(109,109,109);stroke-width:2"/>
+		</svg>
+	</div>
+	
+	<img id="nameHome" width="40" src="images/logo_MP_noBG.svg">
+	<div id="MP">Marjolaine Paz</div>
+	<div id="UI">2D/UI artist</div>
+		<ul id="menuHome">
+			<li><a onclick="load_content('Works.html')">WORK</a></li>
+			<img id="eyeHome" width="40" src="images/icon_Eye.svg">
+			<li><a onclick="load_content('About.html')">ABOUT</a></li>
+		</ul>
+	
+	<div class="homeVerticalLine">
+		<svg>
+			<line x1="0" y1="0" x2="0" y2="42" style="stroke:rgb(109,109,109);stroke-width:2"/>
+		</svg>
+	</div>
+	<p>Welcome!</br> I'm still updating this website, so stay tuned :) </p>
 </div>
+
+<header>
+	<div id="verticalLine">
+		<svg>
+			<line x1="0" y1="0" x2="0" y2="42" style="stroke:rgb(109,109,109);stroke-width:2"/>
+		</svg>
+	</div>
+	
+	<div id="Top">
+		<div id="name">
+		<a onclick="goHome()"><img class="Home" src="images/logo_MP.svg"></a> 
+		<h1>Marjolaine Paz</h1></div>
+
+		<nav>
+			<ul id="menu">
+				<li><a onclick="load_content('Works.html')">WORK</a></li>
+				<img id="Eye" width="40" src="images/icon_Eye.svg">
+				<li><a onclick="load_content('About.html')">ABOUT</a></li>
+			</ul>
+		</nav>
+
+		<div id= "social">
+		<a href="https://twitter.com/Linheha"> <img class="twitter" width="18" height="18" src="images/logo_twitter.svg" ></a>
+		<a href="https://www.artstation.com/linheha"> <img class="twitter" width="18" height="18" src="images/logo_artstation.svg"></a>
+		<a href="https://linheha.deviantart.com/">  <img class="twitter" width="18" height="18" src="images/logo_deviantart.svg"></a>
+		<a href="https://www.linkedin.com/in/marjolaine-paz/">  <img class="twitter" width="18" height="18" src="images/logo_linkedin.svg"></a>
+		</div>
+	</div>
+</header>
+ 
+ <div id="pageContent"></div>
+ 
 </body>
 </html>

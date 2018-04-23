@@ -1,0 +1,252 @@
+/* -------- CONTENT DIV --------- */
+
+#pageContent {
+	flex-basis: 100%;
+	max-width: 100%;
+	align-self: center;
+	text-align: center;
+	}
+
+/* --- Only Projects --- */
+.projectTop {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4px;
+}
+
+.projectNb {
+	font-family: Scada;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 8px;
+}
+
+.projectNb a{
+	font-size: 30px; /* arrows*/
+}
+	
+.h3Container {
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	background: #000;
+}
+
+h3 {
+	text-align: center;
+	color: #fff;
+	font-family: Letter Gothic Std;
+	font-size: 19px;
+	font-weight: 700;
+	padding: 9px 12px 9px 12px;
+	margin-right: auto;
+    margin-left: auto;
+	width: fit-content;
+	}
+
+.projectMoreInfosContainer {
+	background: #e2e0e0;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+.projectMoreInfos {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-right: auto;
+    margin-left: auto;
+    width: 395px;
+	/*font-family: Letter Gothic Std;*/
+	font-family: Scada;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5em;
+	text-align: justify;
+	}
+	
+h5 {
+	font-family: Scada;
+	font-weight: 400;
+	font-size: 20px;
+	}
+	
+.underRoleLine {
+	padding-top: 14px;
+	padding-bottom: 14px;
+	width: 30px;
+	height: 4px;
+}
+
+.projectDescription{
+	font-style: italic;
+	}
+
+.projectContext{
+	color: #4D4D4D;
+	}
+
+	/* PAS PRIO */
+.navProject {
+	position: fixed; MOUAHAHAHAHA
+	z-index: 3;
+	display: flex;
+	vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+	width: 100%;
+	float: left;
+	padding-right: 20px;
+	margin-right: 0;
+    margin-left: auto;
+	}
+
+
+/*.navProject a {
+	font-family: Letter Gothic Std;
+	font-size: 14px;
+	text-align: right;
+	color: #000;
+	text-decoration: none;
+	font-weight: 300;
+	padding-bottom:3px;
+    padding-top: 3px;
+	display: block;
+	}
+	
+.navProject a:hover {
+	font-style: italic;
+	}
+
+.navProjectTitles {
+	float: left;
+	padding-right: 20px;
+	margin-right: 0;
+    margin-left: auto;
+	}
+
+.navProjectTitles svg {
+	float: right;
+	}
+	*/
+
+
+
+	/* FIN HAUT PROJET */
+
+.linesSeparation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+	}
+
+h4 {
+	font-family: Letter Gothic Std;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	/*width: fit-content; Firefox nous chie dessus*/
+	display: table; /* remplace width au dessus*/
+	padding: 6px 9px 2px 9px;
+	background: #000;
+	color: #fff;
+	}
+
+.projectContent{
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 120px); /*calc(100% - 250px);*/
+	}
+
+h6 {
+	font-size: 14px;
+    text-align: center;
+    font-family: Letter Gothic Std;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 9px;
+	}
+
+.projectComments {
+	width: 35%;
+    font-family: Scada;
+    font-weight: 400;
+    font-size: 14px;
+	color: #464646;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 18px;
+	}
+
+.projectContent img {
+	width: 100%;
+	padding-bottom: 8px;
+	/*transition: opacity 2s;
+	opacity: 1;*/
+	}
+
+video {
+	width: 1280px; /*100%;*/
+	height: 720px; /*100%;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 8px;
+	}
+
+
+.linesSeparation svg {
+	width: 42px;
+	height: 2px;
+    margin-bottom: auto;
+    margin-top: auto;
+	}
+
+	
+/* ------Return to top------ */
+.topButton {
+	width: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+	margin-top: 24px;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 9px;
+    outline: #000 solid 1px;
+		text-decoration: none;
+	text-align: center;
+	font-family: Letter Gothic Std;
+	font-size: 16px;
+	color: #000;
+	transition: .5s ease;
+	}
+
+.topButton:hover {
+	color: #fff;
+	background: #000;
+	}
+
+
+/* -------- Responsive Stuff --------*/
+
+@media (max-width: 800px) {
+
+	.projectTitle {
+	padding: 35px 20px 20px 20px;
+	}
+
+	.projectContent {
+	width: calc(100% - 56px);
+	}
+}
+	
+@media (max-width: 500px) {
+	
+	.projectTitle {
+	padding: 25px 20px 20px 20px;
+	width: calc(100% - 40px);
+	}
+}
