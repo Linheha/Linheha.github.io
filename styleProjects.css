@@ -64,6 +64,12 @@ h3 {
 	text-align: justify;
 	}
 	
+.projectMoreInfos a {
+	text-decoration: underline;
+	color: #4D4D4D;
+	}
+
+	
 h5 {
 	font-family: Scada;
 	font-weight: 400;
