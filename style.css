@@ -36,7 +36,9 @@ body.home header, body.home #pageContent{
     display: block;
     text-align: center;
     font-style: italic;
-    font-family: Letter Gothic Std;
+   /* font-family: Letter Gothic Std;*/
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
     font-size: 14px;
 	line-height: 1.5em;
     text-decoration: none;
@@ -67,7 +69,7 @@ body.home #homeBlock{
     padding-bottom: 20px;
     display: block;
 	}
-
+	
 #nameHome a {
 	vertical-align: middle;
 	display: inline-block;
@@ -83,7 +85,8 @@ body.home #homeBlock{
 	display: inline-block;
     text-align: center;
     width: 70px;
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
     font-size: 18px;
     text-decoration: none;
     color: #000;
@@ -198,7 +201,8 @@ header  nav {
 	}
 	
 #menu li a {
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
 	font-size: 14px;
 	text-decoration: none;
 	color: #000 /*#6D6D6D*/;
@@ -211,7 +215,7 @@ header  nav {
 #menu li :hover, #menuHome li :hover {
 	border-bottom: none;
 	color: #E20A2E;
-	font-weight: 700;
+	font-weight: 400;
 	}
 
 #menu li a :focus {
@@ -298,12 +302,14 @@ outline: dotted thin;
 
 .imgContainer h2 {
 	position: absolute;
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
 	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
-	line-height: 1.2em;
-	padding: 6px 12px 2px 12px;
+	/* line-height: 1.2em; */
+	padding: 6px 12px 6px 12px;
+	height: 16px;
 	line-height: 1.2em;
 	background-color: #000;	
 	transition: .5s ease;
@@ -330,7 +336,7 @@ outline: dotted thin;
 	padding-top: 24px;
 	font-family: Scada;
 	font-style: italic;
-	line-height: 1.2em;
+	line-height: 1.5em;
 	font-weight: 400;
 	font-size: 15px;
 	color: #000;
@@ -338,7 +344,7 @@ outline: dotted thin;
 
 #CVTitle {
 	padding-top: 24px;
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
 	font-weight: 400;
 	font-size: 15px;
 	color: #000;

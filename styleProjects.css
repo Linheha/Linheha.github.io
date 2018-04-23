@@ -36,9 +36,10 @@
 h3 {
 	text-align: center;
 	color: #fff;
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
+	height: 14px;
 	font-size: 19px;
-	font-weight: 700;
 	padding: 9px 12px 9px 12px;
 	margin-right: auto;
     margin-left: auto;
@@ -56,7 +57,6 @@ h3 {
 	margin-right: auto;
     margin-left: auto;
     width: 395px;
-	/*font-family: Letter Gothic Std;*/
 	font-family: Scada;
 	font-weight: 400;
 	font-size: 14px;
@@ -141,13 +141,14 @@ h5 {
 	}
 
 h4 {
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
-	/*width: fit-content; Firefox nous chie dessus*/
-	display: table; /* remplace width au dessus*/
-	padding: 6px 9px 2px 9px;
+	width: fit-content; /*Firefox nous chie dessus*/
+	/*display: table; remplace width au dessus*/
+	padding: 6px 9px 6px 9px;
+	height: 14px;
 	background: #000;
 	color: #fff;
 	}
@@ -159,10 +160,10 @@ h4 {
 	}
 
 h6 {
-	font-size: 14px;
+	font-size: 16px;
     text-align: center;
-    font-family: Letter Gothic Std;
-    font-weight: 700;
+    font-family: Scada;
+    font-weight: 400;
     color: #000;
     padding-bottom: 9px;
 	}
@@ -216,9 +217,10 @@ video {
     padding-bottom: 6px;
     padding-top: 9px;
     outline: #000 solid 1px;
-		text-decoration: none;
+	text-decoration: none;
 	text-align: center;
-	font-family: Letter Gothic Std;
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
 	font-size: 16px;
 	color: #000;
 	transition: .5s ease;
