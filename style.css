@@ -335,10 +335,9 @@ outline: dotted thin;
 #aboutText {
 	padding-top: 24px;
 	font-family: Scada;
-	font-style: italic;
 	line-height: 1.5em;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
 	color: #000;
 }
 
@@ -351,7 +350,7 @@ outline: dotted thin;
 }
 
 #aboutPic {
-	width: 200px;
+	width: 140px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
