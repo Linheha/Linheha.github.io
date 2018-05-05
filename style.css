@@ -4,6 +4,16 @@ body {
 	height: 100%;
 	overflow-y:scroll;
 	}
+	
+::selection {
+    background-color: #E20A2E;
+    color: #fff;
+}
+
+::-moz-selection { /* Code for Firefox */
+     background-color: #E20A2E;
+    color: #fff;
+}
 
 [onclick] {
     cursor: crosshair;
