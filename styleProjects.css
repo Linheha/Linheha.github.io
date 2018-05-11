@@ -66,7 +66,13 @@ h3 {
 	
 .projectMoreInfos a {
 	text-decoration: underline;
-	color: #4D4D4D;
+	/* color: #4D4D4D; */
+	color: #000;
+	}
+	
+.projectMoreInfos a:hover {
+	text-decoration: none;
+	color: #E20A2E;
 	}
 
 	
@@ -83,16 +89,17 @@ h5 {
 	height: 4px;
 }
 
-.projectDescription{
+.projectDescription {
 	font-style: italic;
 	}
+	
 
-.projectContext{
+.projectContext {
 	color: #4D4D4D;
 	}
 
 	/* PAS PRIO */
-.navProject {
+/*.navProject {
 	position: fixed; MOUAHAHAHAHA
 	z-index: 3;
 	display: flex;
@@ -105,7 +112,7 @@ h5 {
 	margin-right: 0;
     margin-left: auto;
 	}
-
+*/
 
 /*.navProject a {
 	font-family: Letter Gothic Std;
@@ -159,7 +166,7 @@ h4 {
 	color: #fff;
 	}
 
-.projectContent{
+.projectContent {
 	margin-left: auto;
 	margin-right: auto;
 	width: calc(100% - 120px); /*calc(100% - 250px);*/
