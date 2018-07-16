@@ -364,6 +364,8 @@ outline: dotted thin;
 	font-weight: 400;
 	font-size: 14px;
 	color: #000;
+  margin: auto;
+  width: calc(100% - 40px);
 }
 
 #CVTitle {
