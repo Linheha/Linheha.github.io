@@ -377,6 +377,7 @@ outline: dotted thin;
 }
 
 #aboutPic {
+  padding-top: 24px;
 	width: 140px;
 	height: auto;
 	margin-left: auto;
