@@ -50,24 +50,10 @@ body.home header, body.home #pageContent{
 }
 
 #homeBlock {
-	padding-top: 90px;
+	padding-top: 120px;
 	display:none;
 	margin: auto;
 	vertical-align: middle;
-}
-
-#homeBlock p {
-    padding-top: 54px;
-    display: block;
-    text-align: center;
-    font-style: italic;
-   /* font-family: Letter Gothic Std;*/
-	font-family: 'Overpass Mono', monospace;
-	font-weight: 300;
-    font-size: 14px;
-	line-height: 1.5em;
-    text-decoration: none;
-    color: #000;
 }
 
 
