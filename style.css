@@ -362,6 +362,16 @@ outline: dotted thin;
 	color: #000;
 }
 
+#CVTitle a {
+    text-decoration: underline;
+    color: #000;
+}
+
+#CVTitle a:hover {
+    text-decoration: none;
+    color: #E20A2E;
+}
+    
 #aboutPic {
   padding-top: 24px;
 	width: 140px;
