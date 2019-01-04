@@ -50,8 +50,12 @@ body.home header, body.home #pageContent{
 }
 
 #homeBlock {
-	padding-top: 120px;
-	display:none;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+	display:none; /*ne pas supprimer, vraiment*/
 	margin: auto;
 	vertical-align: middle;
 }
