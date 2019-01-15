@@ -30,6 +30,7 @@ function nomdelafonction(event) {
 
 var projects=[
 "works_content/Absolver.html",
+"works_content/Chefbattle.html",
 "works_content/RoH.html",
 "works_content/Apoptosis.html",
 "works_content/MLD.html"]

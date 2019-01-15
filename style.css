@@ -272,17 +272,17 @@ outline: dotted thin;
 	padding: 30px 60px 30px 60px;
 	overflow: hidden;
 	/* width: calc(100% - 56px); */
-	width:67.5%;
+	/*width:67.5%;*/
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 	transition: .2s ease-in-out;
 	}
 	
 .imgContainer {
 	display: flex;
 	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
 	text-align: center;
 	}	
 
@@ -298,21 +298,33 @@ outline: dotted thin;
 	padding-bottom: 4px;
 	}
 	
-#row {
+  
+#Mainrow {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	}
-
+  
+#Mainrow .imgContainer {
+	padding-left: 4px;
+	padding-right: 4px;
+	margin:0px;
+	/* float: left; */
+}
+  
+  #row {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	}
+  
 #row .imgContainer {
-	width: 30%; /*à pas supprimer : 3 images alignées qui se resizent bien*/
+	/*width: 30%; à pas supprimer : 3 images alignées qui se resizent bien*/
 	padding-left: 4px;
 	padding-right: 4px;
 	margin:0px;
 	float: left;
 	/*margin: 4px;*/
 	}
-
 /* ---------h2 IMAGES hovering--------- */
 
 .imgContainer h2 {
@@ -445,10 +457,34 @@ outline: dotted thin;
 	#Eye {
 		width: 35px;
 	}
+  
+  /*Gallery - one image per row*/
+  
+  #Mainrow {
+    flex-wrap: wrap;
+  }
+  
+	#row  {
+		flex-wrap: wrap;
+	}
+	
+	.imgContainer img {
+		width: 616px;
+	}
+	
+	#row .imgContainer {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 4px;
+	}
+  
 }
 	
 @media (max-width: 680px) {
-	
+	#Mainrow {
+    flex-wrap: wrap;
+  }
+  
 	#row  {
 		flex-wrap: wrap;
 	}
